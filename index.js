@@ -28,7 +28,7 @@ inquirer
         {
             type: 'input',
             name: 'Usage Information',
-            message: 'Enter usage information for your project',
+            message: 'Describe how to use your project',
         },
         {
             type: 'multi-choice',
@@ -37,35 +37,40 @@ inquirer
             rows: [
                         {
                             name: 'Apache',
-                            value: '#f00',
+                            value: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
                         },
                         {
                             name: 'MIT',
-                            value: '#0f0',
+                            value: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
                         },
                         {
-                            name: 'GPL',
-                            value: '#00f',
+                            name: 'Mozilla Public License',
+                            value: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
                         },
                     ],
                 },
                 {
                     type: 'input',
-                    name: 'linkedin',
-                    message: 'Enter your LinkedIn URL.',
+                    name: 'Contributors',
+                    message: 'Enter who contributed to your project.',
                 },
                 {
                     type: 'input',
-                    name: 'github',
+                    name: 'Tests',
+                    message: 'Enter any testing information for your project.',
+                },
+                {
+                    type: 'input',
+                    name: 'GitHub',
                     message: 'Enter your GitHub Username',
                 },
                 {
                     type: 'input',
-                    name: 'linkedin',
-                    message: 'Enter your LinkedIn URL.',
+                    name: 'Email',
+                    message: 'Enter your email address.',
                 },
             ])
-    .then((answers) => {
+    .then((userInput) => {
         const htmlPageContent = generateHTML(answers);
 
 # Title
