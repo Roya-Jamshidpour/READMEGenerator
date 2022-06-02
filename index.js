@@ -8,6 +8,26 @@ const questions = [];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { 
 
+    `# Title
+
+    ## Table of Contents
+    
+    ## Description 
+    
+    ## Table of Contents 
+    
+    ## Installation 
+    
+    ## Usage 
+    
+    ## License 
+    
+    ## Contributing 
+    
+    ## Tests  
+    
+    ## Questions`
+    
 // questions asked to user
 inquirer
     .prompt([
@@ -74,25 +94,6 @@ inquirer
     .then((userInput) => {
         const htmlPageContent = generateHTML(answers);
 
-# Title
-
-## Table of Contents
-
-## Description 
-
-## Table of Contents 
-
-## Installation 
-
-## Usage 
-
-## License 
-
-## Contributing 
-
-## Tests  
-
-## Questions
 
 
 
