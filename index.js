@@ -20,7 +20,7 @@ function writeToFile(fileName, data) {
     6. [Tests](#Tests)
     7. [Questions](#GitHub)
 
-     ## Contributing
+    ## Contributing
     ${userInput.Contributors}
 
     ## Description 
@@ -40,7 +40,7 @@ function writeToFile(fileName, data) {
     
     ## Questions
     ### [My GitHub](#https://github.com/${userInput.GitHub})
-    ### My Email <a href="${userInput.Email}"
+    ### [My Email](${userInput.Email})
     `
 ;
 
