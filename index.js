@@ -41,8 +41,12 @@ function writeToFile(fileName, data) {
     ## Questions
     ### [My GitHub](#https://github.com/${userInput.GitHub})
     ### [My Email](${userInput.Email})
+
+    ## Link to Deployed Application
+    ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
     `
 ;
+}
 
 // questions asked to user
 inquirer
@@ -121,7 +125,7 @@ inquirer
                 fs.writeFile("README.md", makeReadMe), (err) =>
                   err ? console.log(err) : console.log('Successfully created your README file!')
                 
-            }
+        });
 
 
 
