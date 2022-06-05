@@ -2,11 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-const questions = [];
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { 
+const writeToFile = (userInput) =>
 
     `# Title
     ${userInput.Title}
@@ -46,7 +43,6 @@ function writeToFile(fileName, data) {
     ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
     `
 ;
-}
 
 // questions asked to user
 inquirer
@@ -120,41 +116,14 @@ inquirer
                 },
             ])
             .then((userInput) => {
-                const makeReadMe = writeToFile(userInput)
+             writeToFile(userInput)
             
-                fs.writeFile("README.md", makeReadMe), (err) =>
+                fs.writeFile("README.md"), (err) =>
                   err ? console.log(err) : console.log('Successfully created your README file!')
                 
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // TODO: Create a function to initialize app
-        
-
+    
         // Function call to initialize app
        
