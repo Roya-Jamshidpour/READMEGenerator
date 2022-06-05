@@ -27,7 +27,8 @@ function writeToFile(fileName, data) {
     ## Tests  
     
     ## Questions`
-    
+}
+
 // questions asked to user
 inquirer
     .prompt([
@@ -91,10 +92,6 @@ inquirer
                     message: 'Enter your email address.',
                 },
             ])
-    .then((userInput) => {
-        const htmlPageContent = generateHTML(answers);
-
-
 
 
 
@@ -123,7 +120,7 @@ inquirer
 
 
         // TODO: Create a function to initialize app
-        function init() { }
+        
 
         // Function call to initialize app
-        init();
+       
