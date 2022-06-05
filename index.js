@@ -9,25 +9,40 @@ const questions = [];
 function writeToFile(fileName, data) { 
 
     `# Title
+    ${userInput.Title}
 
     ## Table of Contents
-    
+    1. [Contributing](#Contributors)
+    2. [Description](#Description)
+    3. [Installation](#Installation)
+    4. [Usage](#Usage)
+    5. [License](#License)
+    6. [Tests](#Tests)
+    7. [Questions](#GitHub)
+
+     ## Contributing
+    ${userInput.Contributors}
+
     ## Description 
-    
-    ## Table of Contents 
+    ${userInput.Description}
     
     ## Installation 
+    ${userInput.Installation}
     
     ## Usage 
+    ${userInput.Usage}
     
     ## License 
+    ${userInput.License}
     
-    ## Contributing 
+    ## Tests
+    ${userInput.Tests}
     
-    ## Tests  
-    
-    ## Questions`
-}
+    ## Questions
+    ### [My GitHub](#https://github.com/${userInput.GitHub})
+    ### My Email <a href="${userInput.Email}"
+    `
+;
 
 // questions asked to user
 inquirer
@@ -49,12 +64,12 @@ inquirer
         },
         {
             type: 'input',
-            name: 'Installation Instructions',
+            name: 'Installation',
             message: 'Enter installation instructions for your project.',
         },
         {
             type: 'input',
-            name: 'Usage Information',
+            name: 'Usage',
             message: 'Describe how to use your project',
         },
         {
@@ -100,6 +115,13 @@ inquirer
                     message: 'Enter your email address.',
                 },
             ])
+            .then((userInput) => {
+                const makeReadMe = writeToFile(userInput)
+            
+                fs.writeFile("README.md", makeReadMe), (err) =>
+                  err ? console.log(err) : console.log('Successfully created your README file!')
+                
+            }
 
 
 
