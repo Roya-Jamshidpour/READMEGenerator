@@ -39,6 +39,11 @@ inquirer
         },
         {
             type: 'input',
+            name: 'Contributors',
+            message: 'Enter who contributed to your project.',
+        },
+        {
+            type: 'input',
             name: 'Description',
             message: 'Enter a description of your project.',
         },
@@ -53,10 +58,10 @@ inquirer
             message: 'Describe how to use your project',
         },
         {
-            type: 'multi-choice',
+            type: 'checkbox',
             name: 'License',
             message: 'Which license would you like to have for your project?',
-            rows: [
+            choices: [
                         {
                             name: 'Apache',
                             value: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
@@ -70,11 +75,6 @@ inquirer
                             value: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
                         },
                     ],
-                },
-                {
-                    type: 'input',
-                    name: 'Contributors',
-                    message: 'Enter who contributed to your project.',
                 },
                 {
                     type: 'input',
