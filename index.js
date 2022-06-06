@@ -1,49 +1,7 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
-// TODO: Create a function to write README file
-const createReadMe = (userInput) => 
-
-    `# Title
-    ${userInput.Title}
-
-    ## Table of Contents
-    1. [Contributing](#Contributors)
-    2. [Description](#Description)
-    3. [Installation](#Installation)
-    4. [Usage](#Usage)
-    5. [License](#License)
-    6. [Tests](#Tests)
-    7. [Questions](#GitHub)
-
-    ## Contributing
-    ${userInput.Contributors}
-
-    ## Description 
-    ${userInput.Description}
-    
-    ## Installation 
-    ${userInput.Installation}
-    
-    ## Usage 
-    ${userInput.Usage}
-    
-    ## License 
-    ${userInput.License}
-    
-    ## Tests
-    ${userInput.Tests}
-    
-    ## Questions
-    ### [My GitHub](#https://github.com/${userInput.GitHub})
-    ### [My Email](${userInput.Email})
-
-    ## Link to Deployed Application
-    ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
-    `
-;
-
+const genMarkdown = require("./generateMarkdown")
 
 // questions asked to user
 inquirer
@@ -116,12 +74,21 @@ inquirer
                     message: 'Enter your email address.',
                 },
             ])
-            .then((userInput) => {
-                console.log(userInput);
-                const readmeContent = createReadMe(userInput)
-                fs.writeFile("README.md", readmeContent, (err) => 
-                err ? console.log(err) : console.log('README generated successfully!'));
-            });
+            .then(userInput => genMarkdown(userInput)) 
+            .then (readMe => {
+                fs.writeFile("README.md", readMe, err => {
+                    if (err){
+                        return;
+                    }
+                })
+            }
+
+            )
+
+            // console.log(userInput);
+            // const readmeContent = createReadMe(userInput)
+            // fs.writeFile("README.md", readmeContent, (err) => 
+            // err ? console.log(err) : console.log('README generated successfully!'));
 
         // TODO: Create a function to initialize app
     
