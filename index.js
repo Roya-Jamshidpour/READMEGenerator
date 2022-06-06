@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create a function to write README file
-const writeToFile = (userInput) => {
+const createReadMe = (userInput) => 
 
     `# Title
     ${userInput.Title}
@@ -43,7 +43,7 @@ const writeToFile = (userInput) => {
     ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
     `
 ;
-}
+
 
 // questions asked to user
 inquirer
@@ -118,8 +118,8 @@ inquirer
             ])
             .then((userInput) => {
                 console.log(userInput);
-                const readmeContent = writeToFile(userInput)
-                fs.writeToFile('./utils/generated-README.md', readmeContent, (err) => 
+                const readmeContent = createReadMe(userInput)
+                fs.writeFile("README.md", readmeContent, (err) => 
                 err ? console.log(err) : console.log('README generated successfully!'));
             });
 
