@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create a function to write README file
-const writeToFile = (userInput) =>
+const writeToFile = (userInput) => {
 
     `# Title
     ${userInput.Title}
@@ -43,6 +43,7 @@ const writeToFile = (userInput) =>
     ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
     `
 ;
+}
 
 // questions asked to user
 inquirer
@@ -116,12 +117,11 @@ inquirer
                 },
             ])
             .then((userInput) => {
-             writeToFile(userInput)
-            
-                fs.writeFile("README.md"), (err) =>
-                  err ? console.log(err) : console.log('Successfully created your README file!')
-                
-        });
+                console.log(userInput);
+                const readmeContent = writeToFile(userInput)
+                fs.writeToFile('./utils/generated-README.md', readmeContent, (err) => 
+                err ? console.log(err) : console.log('README generated successfully!'));
+            });
 
         // TODO: Create a function to initialize app
     
