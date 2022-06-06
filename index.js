@@ -46,15 +46,15 @@ inquirer
                         },
                         {
                             name: 'BSD-3-Clause License',
-                            value: '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]',
+                            value: '![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)',
                         },
                         {
                             name: 'Boost Software License',
-                            value: '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]',
+                            value: '![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)',
                         },
                         {
                             name: 'Mozilla Public License',
-                            value: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]',
+                            value: '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)',
                         },
                     ],
                 },
@@ -84,13 +84,4 @@ inquirer
             }
 
             )
-
-            // console.log(userInput);
-            // const readmeContent = createReadMe(userInput)
-            // fs.writeFile("README.md", readmeContent, (err) => 
-            // err ? console.log(err) : console.log('README generated successfully!'));
-
-        // TODO: Create a function to initialize app
-    
-        // Function call to initialize app
        
