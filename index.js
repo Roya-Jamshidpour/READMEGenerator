@@ -38,11 +38,11 @@ inquirer
             choices: [
                         {
                             name: 'Apache 2.0',
-                            value: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]',
+                            value: '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)',
                         },
                         {
                             name: 'MIT',
-                            value: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]',
+                            value: '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)',
                         },
                         {
                             name: 'BSD-3-Clause License',
