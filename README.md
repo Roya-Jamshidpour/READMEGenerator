@@ -14,19 +14,19 @@
   Roya Jamshidpour
   
   ## Description 
-  Examines your champagne preferences and suggest a champagne for you to try
+  Bubbles in an app that allows you to select a bottle of champagne and have it to sip on in your bubble bath
       
   ## Installation 
   None to specify
       
   ## Usage 
-  Load it into browser and go
+  Load it into the browser while you fill up your tub
       
   ## License 
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
       
   ## Tests
-  No testing done yet
+  No tests done
       
   ## Questions
   ### GitHub: Roya-Jamshidpour
