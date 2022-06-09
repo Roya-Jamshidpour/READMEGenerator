@@ -33,8 +33,8 @@ function generateMarkdown(userInput) {
   ${userInput.Tests}
       
   ## Questions
-  ### [My GitHub](#https://github.com/${userInput.GitHub})
-  ### [My Email](${userInput.Email})
+  ### GitHub: ${userInput.GitHub}
+  ### Email: ${userInput.Email}
   
   ## Link to Deployed Application
   ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
