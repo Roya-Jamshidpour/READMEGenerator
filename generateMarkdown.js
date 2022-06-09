@@ -2,8 +2,7 @@
 
 // function to generate markdown for README
 function generateMarkdown(userInput) {
-  return `# Title
-  ${userInput.Title}
+  return `# ${userInput.Title}
   
   ## Table of Contents
   1. [Contributing](#Contributors)
