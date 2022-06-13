@@ -14,7 +14,7 @@ This is a command-line application that gives prompts to the user about a README
 Node.js, JavaScript, JSON 
 
 ## License:
-MIT 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Walkthrough link 
 <a href="https://drive.google.com/file/d/1ANK-NqWlPNgdXQnovf6kHkql2OX6YjXI/view?usp=sharing">Click Here
