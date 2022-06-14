@@ -16,5 +16,5 @@ Node.js, JavaScript, JSON
 ## License:
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Walkthrough link 
+## Walkthrough Video 
 <a href="https://drive.google.com/file/d/1ANK-NqWlPNgdXQnovf6kHkql2OX6YjXI/view?usp=sharing">Click Here
