@@ -38,8 +38,8 @@ function generateMarkdown(userInput) {
   ## Link to Deployed Application
   ### [Click here!](https://${userInput.GitHub}.github.io/${userInput.Title}/)
   `
-  
-  
+
+
 }
 
 
