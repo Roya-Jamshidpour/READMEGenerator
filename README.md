@@ -1,36 +1,20 @@
-# Bubbles
-  
-  ## Table of Contents
-  1. [Contributing](#Contributors)
-  2. [Description](#Description)
-  3. [Installation](#Installation)
-  4. [Usage](#Usage)
-  5. [License](#License)
-  6. [Tests](#Tests)
-  7. [Questions](#GitHub)
-  
-  ## Contributing
-  Roya Jamshidpour
-  
-  ## Description 
-  Explains how to blow bubbles into your champagne
-      
-  ## Installation 
-  None
-      
-  ## Usage 
-  Load into browser and follow prompts
-      
-  ## License 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-      
-  ## Tests
-  None
-      
-  ## Questions
-  ### [My GitHub](https://github.com/Roya-Jamshidpour)
-  ### [My Email](roya.jamshidpour@gmail.com)
-  
-  ## Link to Deployed Application
-  ### [Click here!](https://Roya-Jamshidpour.github.io/Bubbles/)
-  
+# README Generator
+
+## Contributor:
+Roya Jamshidpour - roya.jamshidpour@gmail.com
+
+## Description
+This is a command-line application that gives prompts to the user about a README for their project. It takes user input and creates a README.md for the user based on their answers.
+
+## Installation & Usage:
+1. Run 'npm install' in your terminal to install all required packages.
+2. Run 'node index.js' in your terminal to load and answer the prompts. 
+
+## Technologies used:
+Node.js, JavaScript, JSON 
+
+## License:
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## Walkthrough Video 
+<a href="https://drive.google.com/file/d/1ANK-NqWlPNgdXQnovf6kHkql2OX6YjXI/view?usp=sharing">Click Here
