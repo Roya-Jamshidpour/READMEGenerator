@@ -11,7 +11,7 @@ This is a command-line application that gives prompts to the user about a README
 2. Run 'node index.js' in your terminal to load and answer the prompts. 
 
 ## Technologies used:
-Node.js, JavaScript, JSON 
+Node.js, JavaScript, HTML, CSS
 
 ## License:
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
